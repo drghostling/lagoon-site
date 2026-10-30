@@ -1,3 +1,3 @@
-# Cove site
+# Lagoon site
 
-Static pages for Cove: landing, support and privacy policy. Published with GitHub Pages.
+Static pages for Lagoon: landing, support and privacy policy. Published with GitHub Pages.
