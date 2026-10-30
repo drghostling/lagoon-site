@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cove Privacy Policy</title><meta name="description" content="Cove does not collect or share personal data. Audio and transcripts stay on your Mac.">
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--mut:#6e6e73;--acc:#d9381e;--card:#f5f5f7;--line:#d2d2d7}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#f5f5f7;--mut:#a1a1a6;--acc:#ff6a4d;--card:#1c1c1e;--line:#38383a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 20px 80px}nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:36px}nav a{color:var(--mut);text-decoration:none}nav a:hover,nav a[aria-current]{color:var(--fg)}
+h1{font-size:2.2rem;line-height:1.15;margin:0 0 .4em}h2{font-size:1.25rem;margin:2em 0 .4em}p,li{color:var(--fg)}.mut{color:var(--mut)}
+a{color:var(--acc)}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:14px 0}code{background:var(--card);padding:.1em .35em;border-radius:5px;font-size:.92em}
+footer{margin-top:56px;color:var(--mut);font-size:.9rem}
+</style></head><body><main>
+<nav><a href="index.html" >Cove</a><a href="support.html" >Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+
+<h1>Privacy Policy</h1>
+<p class="mut">Last updated: 2026-10-30</p>
+<p>Cove does not collect, transmit or share any personal data. It has no accounts, no analytics and no advertising. The only network use is the optional, one-time download of the Whisper speech model (see below), which you confirm first.</p>
+<h2>Microphone</h2>
+<p>When you start a recording, Cove records audio from your microphone and saves it on your Mac, in the <code>Cove</code> folder inside your Documents folder. Cove never records unless you start a recording.</p>
+<h2>Speech recognition</h2>
+<p>The live transcript uses Apple&rsquo;s speech recognition. Cove asks for on-device recognition whenever the language is available on your Mac, in which case nothing leaves your Mac. If a language is not available on-device, macOS may process that audio with Apple&rsquo;s servers under Apple&rsquo;s own privacy terms; Cove cannot control that.</p>
+<h2>Whisper (optional)</h2>
+<p>If you turn on &ldquo;Improve with Whisper&rdquo; and use it, Cove downloads an open-source speech model (about 480 to 626&nbsp;MB depending on the model you choose, from the Hugging Face model hub) after asking you. No audio or text is uploaded; the download only fetches the model. Transcription then runs entirely on your Mac.</p>
+<h2>Your files</h2>
+<p>Recordings and transcripts stay in the folder above. You can delete them at any time in Finder. Cove keeps a small diagnostic log on your Mac (<code>~/Library/Logs/Cove/cove.log</code>) with technical events such as &ldquo;recording started&rdquo;; it contains no audio and no transcript text.</p>
+<h2>Children</h2>
+<p>Cove does not knowingly collect any information from anyone, including children.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date above changes. Questions: open an issue at <a href="https://github.com/drghostling/cove-site/issues">github.com/drghostling/cove-site</a>.</p>
+<h2>T&uuml;rk&ccedil;e &ouml;zet</h2>
+<p>Cove ki&#351;isel veri toplamaz, payla&#351;maz. Ses ve metin Mac&rsquo;inde kal&#305;r. Tek a&#287; kullan&#305;m&#305;, onay verdi&#287;inde Whisper modelinin bir kez indirilmesidir; ses veya metin g&ouml;nderilmez.</p>
+<footer>&copy; 2026 Doruk Kasoglu</footer></main></body></html>
