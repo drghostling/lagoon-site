@@ -1,27 +1,187 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lagoon: timers and live transcripts in your notch</title><meta name="description" content="A quiet utility for the Mac notch: timers, voice recording with live transcripts, all on your Mac.">
-<style>
-:root{--bg:#fff;--fg:#1d1d1f;--mut:#6e6e73;--acc:#d9381e;--card:#f5f5f7;--line:#d2d2d7}
-@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#f5f5f7;--mut:#a1a1a6;--acc:#ff6a4d;--card:#1c1c1e;--line:#38383a}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Helvetica,Arial,sans-serif}
-main{max-width:720px;margin:0 auto;padding:48px 20px 80px}nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:36px}nav a{color:var(--mut);text-decoration:none}nav a:hover,nav a[aria-current]{color:var(--fg)}
-h1{font-size:2.2rem;line-height:1.15;margin:0 0 .4em}h2{font-size:1.25rem;margin:2em 0 .4em}p,li{color:var(--fg)}.mut{color:var(--mut)}
-a{color:var(--acc)}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:14px 0}code{background:var(--card);padding:.1em .35em;border-radius:5px;font-size:.92em}
-footer{margin-top:56px;color:var(--mut);font-size:.9rem}
-.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:600}
-</style></head><body><main>
-<nav><a href="index.html" aria-current="page">Lagoon</a><a href="support.html" >Support</a><a href="privacy.html" >Privacy</a><a href="press.html" >Press</a></nav>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lagoon: timers and live transcripts in your Mac’s notch</title>
+<meta name="description" content="Lagoon is a free Mac app that lives in the notch: one-tap timers, and recordings with a live transcript in up to five languages, saved on your Mac.">
+<link rel="canonical" href="https://drghostling.github.io/lagoon-site/">
+<meta name="theme-color" content="#052B38">
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lagoon">
+<meta property="og:title" content="Lagoon: timers and live transcripts in your Mac’s notch">
+<meta property="og:description" content="One-tap timers, and recordings with a live transcript in up to five languages. Free on the Mac App Store.">
+<meta property="og:url" content="https://drghostling.github.io/lagoon-site/">
+<meta property="og:image" content="https://drghostling.github.io/lagoon-site/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lagoon’s island under the Mac notch, showing a live transcript that mixes English and Turkish">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Lagoon: Notch Timer & Notes","operatingSystem":"macOS 14 or later","url":"https://drghostling.github.io/lagoon-site/","downloadUrl":"https://apps.apple.com/app/lagoon-notch-timer-notes/id6828983918?mt=12","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body class="has-island">
+<a class="skip" href="#main">Skip to content</a>
+<div class="notch" aria-hidden="true"></div>
+<header class="menubar">
+  <nav aria-label="Site">
+    <a class="app" href="./" aria-current="page">Lagoon</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="press.html">Press</a>
+  </nav>
+  <a href="https://apps.apple.com/app/lagoon-notch-timer-notes/id6828983918?mt=12">Download</a>
+</header>
 
-<h1>Lagoon</h1>
-<p class="mut">Timers and live transcripts in your Mac&rsquo;s notch.</p>
-<div class="card"><strong>Start a timer in one tap.</strong><br>5, 15 or 25 minutes from the island under the notch, or with a URL from Shortcuts.</div>
-<div class="card"><strong>Record and read along.</strong><br>Press <code>&#8963;&#8997;R</code> anywhere. The transcript appears as you speak, in the languages you use, even when you mix them.</div>
-<div class="card"><strong>Stays on your Mac.</strong><br>Audio and text are saved to your Documents folder. No account, no analytics, no uploads.</div>
-<div class="card"><strong>Made for everyone.</strong><br>Works with a mouse, a trackpad or a touch display, and supports VoiceOver, Reduce Motion and Reduce Transparency.</div>
-<p><a class="btn" href="https://apps.apple.com/app/id6828983918">Get Lagoon on the Mac App Store</a></p>
-<p class="mut">Free to download. Lagoon Pro is a one-time purchase that removes the 10-minute recording limit and adds Markdown and SRT export and an optional Whisper pass that runs on your Mac. Questions or ideas? See <a href="support.html">Support</a>. Writing about Lagoon? See the <a href="press.html">press kit</a>.</p>
-<h2>T&uuml;rk&ccedil;e</h2>
-<p>Lagoon, Mac&rsquo;inin notch&rsquo;unda saya&ccedil; ve canl&#305; transcript sunan sessiz bir yard&#305;mc&#305; uygulamad&#305;r. Ses ve metin Mac&rsquo;inde kal&#305;r.</p>
-<p>Mac App Store&rsquo;da &uuml;cretsiz: <a href="https://apps.apple.com/tr/app/id6828983918">Lagoon&rsquo;u indir</a>.</p>
-<footer>&copy; 2026 Doruk Kasoglu</footer></main></body></html>
+<main id="main">
+<section class="hero on-dark" data-dark aria-labelledby="hero-h">
+  <div class="island" id="island" role="group" aria-label="Lagoon, working demo">
+    <div class="i-inner">
+      <div class="i-head"><span id="i-label">1 timer</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 15l6.5-6.5 6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="i-list" id="i-list"><div class="group"><div class="t-row"><div class="t-main"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="glyph"><path d="M12 3.6a8.4 8.4 0 1 1-5.94 2.46" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M12 3.6v3.1M12 12 8.7 8.7" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg><div><div class="t-title">Focus</div><div class="t-sub">25:00</div></div><div class="btns"><button type="button" class="ib" aria-label="Pause Focus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6.2" y="4.5" width="4" height="15" rx="1.2" fill="currentColor"/><rect x="13.8" y="4.5" width="4" height="15" rx="1.2" fill="currentColor"/></svg></button><button type="button" class="ib" aria-label="Close Focus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button></div></div><div class="t-bar" aria-hidden="true"><i></i></div></div></div></div>
+      <div class="chips">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="glyph"><path d="M12 3.6a8.4 8.4 0 1 1-5.94 2.46" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M12 3.6v3.1M12 12 8.7 8.7" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>
+        <button type="button" class="chip" data-min="5">5 min</button>
+        <button type="button" class="chip" data-min="15">15 min</button>
+        <button type="button" class="chip" data-min="25">25 min</button>
+        <span class="sep" aria-hidden="true"></span>
+        <button type="button" class="chip rec" id="rec"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.6" y="2.6" width="6.8" height="11.6" rx="3.4" fill="currentColor"/><path d="M5.2 11.2a6.8 6.8 0 0 0 13.6 0M12 18v3.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Record</span></button>
+      </div>
+    </div>
+  </div>
+  <p class="sr" id="demo-live" aria-live="polite"></p>
+  <p class="hint">Try it: tap a timer or Record.<span class="kbd-only"> <kbd>⌃⌥R</kbd> works here too.</span></p>
+
+  <h1 id="hero-h">Timers and live transcripts, under your notch.</h1>
+  <p class="lede">Lagoon is a small Mac app that lives in the notch. Tap once for a 5, 15 or 25 minute timer. Press Control-Option-R and your words appear as you speak.</p>
+  <a class="cta" href="https://apps.apple.com/app/lagoon-notch-timer-notes/id6828983918?mt=12">Download on the Mac App Store</a>
+  <p class="cta-note">Free. Lagoon Pro is a one-time purchase. Needs macOS 14 or later and a Mac with Apple silicon.</p>
+</section>
+
+<div class="wrap">
+  <section class="feature" id="timers" aria-labelledby="timers-h">
+    <div class="copy">
+      <h2 class="h2" id="timers-h">A timer is one tap away</h2>
+      <p>Tap 5, 15 or 25 min in the island and the countdown starts. Run several timers at once, and pause or close each one on its own.</p>
+      <p>For any other length, start a timer from Shortcuts or from anything that can open a link:</p>
+      <p><code>lagoon://timer?minutes=25&amp;title=Focus</code></p>
+    </div>
+    <div class="shots">
+      <figure>
+        <img src="img/crop-lagoon-1-timers.jpg" width="1360" height="770" loading="lazy" alt="The island with two timers: Focus at 25:00, and Tea at 5:00 and paused.">
+        <figcaption>Two timers, one of them paused.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/crop-lagoon-4-both.jpg" width="1360" height="960" loading="lazy" alt="A recording in progress, with a ten-minute timer running below it.">
+        <figcaption>A timer keeps running while you record.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="feature" id="transcripts" aria-labelledby="transcripts-h">
+    <div class="copy">
+      <h2 class="h2" id="transcripts-h">Read what you say while you say it</h2>
+      <p>Press Control-Option-R in any app and Lagoon starts recording. The transcript appears as you speak. It follows up to five languages and keeps up when you switch between them mid-sentence.</p>
+      <p>When you stop, the audio and the text are saved together in Documents/Lagoon, and the text is one click away from your clipboard.</p>
+      <p class="note">Live transcripts use macOS Dictation, so it needs to be on: System Settings, Keyboard, Dictation.</p>
+    </div>
+    <div class="shots">
+      <figure>
+        <img src="img/crop-lagoon-3-mixed.jpg" width="1360" height="730" loading="lazy" alt="A live transcript that moves from English to Turkish and back within one sentence.">
+        <figcaption>English and Turkish in the same sentence.</figcaption>
+      </figure>
+      <figure>
+        <img src="img/crop-lagoon-5-saved.jpg" width="1360" height="730" loading="lazy" alt="A finished recording with its transcript, and buttons to copy the text or open its folder.">
+        <figcaption>A finished recording, saved on your Mac.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="duo">
+    <section aria-labelledby="privacy-h">
+      <h2 class="h2" id="privacy-h">Your recordings stay on your Mac</h2>
+      <p>Lagoon asks macOS for on-device speech recognition whenever your language is available on your Mac. There’s no account and no analytics.</p>
+      <p>If Lagoon quits in the middle of a recording, the audio is recovered the next time it opens.</p>
+      <p><a href="privacy.html">Read the privacy policy</a></p>
+    </section>
+    <section aria-labelledby="touch-h">
+      <h2 class="h2" id="touch-h">Mouse, trackpad or touch</h2>
+      <p>The buttons in the island are big enough for a fingertip, so Lagoon works the same on a touch display, like the one on the new MacBook Pro, as it does with a trackpad.</p>
+      <p>It supports VoiceOver, Reduce Motion and Reduce Transparency, and it works over full-screen apps and on more than one display.</p>
+    </section>
+  </div>
+
+  <section class="plans-sec" id="pro" aria-labelledby="pro-h">
+    <h2 class="h2" id="pro-h">Free, with a one-time upgrade</h2>
+    <div class="plans">
+      <div class="plan free">
+        <h3>Lagoon</h3>
+        <p class="kind">Free</p>
+        <ul>
+          <li>Several timers at once</li>
+          <li>Live transcripts in up to five languages</li>
+          <li>Recordings up to 10 minutes long</li>
+          <li>Audio saved as .m4a, text as .txt</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>Lagoon Pro</h3>
+        <p class="kind">One-time purchase, no subscription</p>
+        <ul>
+          <li>Everything in Lagoon</li>
+          <li>No limit on recording length</li>
+          <li>Export as Markdown (.md) and subtitles (.srt)</li>
+          <li>Improve with Whisper, an optional second pass that runs on your Mac</li>
+        </ul>
+      </div>
+    </div>
+    <p class="plans-note">You buy Pro inside the app. The App Store shows the price in your currency.</p>
+  </section>
+
+  <section class="faq-sec" id="faq" aria-labelledby="faq-h">
+    <h2 class="h2" id="faq-h">Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>I get audio but no transcript. Why?</summary>
+        <p>Live transcripts need Dictation switched on: System Settings, Keyboard, Dictation. Lagoon also asks for microphone and speech recognition access the first time you record. If you said no, allow it in System Settings, Privacy &amp; Security.</p>
+      </details>
+      <details>
+        <summary>Where are my recordings?</summary>
+        <p>In Documents/Lagoon, one folder per recording with the audio and the transcript. Each folder is named after the first words you said.</p>
+      </details>
+      <details>
+        <summary>Which languages does it understand?</summary>
+        <p>By default, your system languages and English. In Settings, under Speech languages, you can choose up to five. The live transcript listens for the first two at once, and the optional Whisper pass uses all of them.</p>
+      </details>
+      <details>
+        <summary>What does Improve with Whisper do?</summary>
+        <p>It’s part of Lagoon Pro: an optional second pass that re-transcribes a saved recording with the open-source Whisper model. Lagoon asks before it downloads the model once (480 to 626 MB). After that it runs entirely on your Mac and uploads nothing.</p>
+      </details>
+      <details>
+        <summary>Which Macs does it run on?</summary>
+        <p>Macs with Apple silicon running macOS 14 or later.</p>
+      </details>
+    </div>
+    <p class="faq-more">Something else? <a href="support.html">Visit Support</a>.</p>
+  </section>
+</div>
+</main>
+
+<footer class="end on-dark" data-dark>
+  <div class="wrap">
+    <img class="icon" src="img/icon-256.png" width="104" height="104" alt="">
+    <h2 class="h2">Try Lagoon on your Mac</h2>
+    <a class="cta" href="https://apps.apple.com/app/lagoon-notch-timer-notes/id6828983918?mt=12">Download on the Mac App Store</a>
+    <p class="cta-note">Free. Lagoon Pro is a one-time purchase.</p>
+    <div class="foot">
+      <nav aria-label="Footer"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="press.html">Press kit</a></nav>
+      <p>© 2026 Doruk Kaşoğlu. This site has no trackers and loads nothing from other servers.</p>
+    </div>
+  </div>
+</footer>
+<script src="lagoon.js" defer></script>
+</body>
+</html>
